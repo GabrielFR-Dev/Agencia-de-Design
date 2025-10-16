@@ -1,25 +1,20 @@
-import Image from "next/image";
 import estilos from "./SecaoBanner.module.css"
 
 export default function SecaoBanner() {
     return (
-        <section>
-            <div className={estilos.container_imagem}>
-                <Image
+        <section className={estilos.container_secao}>
 
-                />
-
+            <div className={estilos.container_banner}>
+               
             </div>
 
             <div className={estilos.container_textual}>
-                <p></p>
+                <p>BRANDING / UI / UX / TECNOLOGIA</p>
 
-                <h2></h2>
+                <h1>Agência de Branding</h1>
 
-                <span></span>
-
+                <span>e design digital</span>
             </div>
-
 
         </section>
     )

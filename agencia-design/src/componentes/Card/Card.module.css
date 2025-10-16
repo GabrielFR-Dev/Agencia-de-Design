@@ -1,0 +1,19 @@
+.container_card {
+    width: 300px;
+    padding: 70px 30px;
+    color: var(--cor-card); 
+    border: 1px solid var(--cor-paragrafo);
+}
+.container_card:hover {
+    background: var(--laranja);
+    border: 1px solid black;
+    transform: scale(1.03) translateY(-5px);
+    transition: transform 0.7s ease-in-out;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}

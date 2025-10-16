@@ -1,15 +1,18 @@
 import estilos from "./SecaoExperienciaTrabalho.module.css";
-import Card from "@componentes/Card";
+import Card from "../Card";
 
 export default function SecaoExperienciaTrabalho (props) {
     return (
-        <section>
-            <div>
-                <h2></h2>
-                <p></p>
+        <section className={estilos.secao_experiencia}>
+            <div className={estilos.container_textual}>
+                <h2 className={estilos.titulo}>Experiências De Trabalho</h2>
+                <p>
+                    Há mais de 10 anos no mercado de Branding, Design Gráfico, criação de sites e
+                    marketing Digital, nos empanhamos diariamente para entregar resultados que tragam impacto aos nossos clientes.
+                </p>
             </div>
 
-            <div>
+            <div className={estilos.container_card}>
                 <Card 
                     data="JUNHO 2012 - 2016"
                     titulo="Web Designer."

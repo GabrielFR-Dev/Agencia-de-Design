@@ -1,0 +1,50 @@
+.secao_experiencia {
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-background-card);
+    align-items: center;
+    gap: 50px;
+}
+.container_textual {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+.titulo {
+    position: relative; 
+    display: inline-block; 
+    font-size: 45px;
+    font-weight: bold;
+    color: #111;
+    padding-bottom: 10px; 
+    color: var(--cor-subtitulo);
+  }
+  
+  .titulo::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 14%; 
+    height: 4px;
+    background-color: var(--laranja); 
+    border-radius: 2px;
+  }
+
+.container_textual p {
+    font-size: 18px;
+    color: var(--cor-paragrafo);
+}
+
+.container_card {
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
