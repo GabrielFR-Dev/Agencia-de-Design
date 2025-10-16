@@ -6,12 +6,12 @@ import Linkedin from "/public/linkedin.png";
 import Dribble from "/public/dribble.png";
 import Behance from "/public/behance.png";
 import Google from "/public/google.png";
+import estilos from "./Rodape.module.css";
 
-export default function Rodape() {
+export default function Rodape(props) {
     return (
-        <footer className={}>
-            <div>
-                <div>
+        <footer className={props.ehTemaEscuro ? estilos.rodape_modo_escuro : estilos.rodape_modo_claro}>
+                <div className={estilos.container_rodape}>
                     <Image
                         src={Logo}
                         alt="Logo"
@@ -21,7 +21,7 @@ export default function Rodape() {
                         Ajudamos a criar uma personalidade digital construidno sua marca no ambiente online utilizando estratégias, ferramentas e tecnologias personalizadas
                     </p>
                 </div>
-                <div>
+                <div className={estilos.container_imagens}>
                     <Image src={Facebook} alt="Facebook" title="Facebook"/>
                     <Image src={Twitter} alt="Twitter" title="Twitter"/>
                     <Image src={Linkedin} alt="Linkedin" title="Linkedin"/>
@@ -30,10 +30,9 @@ export default function Rodape() {
                     <Image src={Behance} alt="Behance" title="Behance"/>
                     <Image src={Google} alt="Google" title="Google"/>
                 </div>
-            </div>
 
-            <div>
-                <p>Copyrigth @ <span>Gabriel ferreira</span></p>
+            <div className={estilos.creditos}>
+              
             </div>
         </footer>
     )

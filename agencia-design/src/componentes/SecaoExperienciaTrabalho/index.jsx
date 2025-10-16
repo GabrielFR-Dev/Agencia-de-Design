@@ -1,9 +1,13 @@
 import estilos from "./SecaoExperienciaTrabalho.module.css";
 import Card from "../Card";
 
-export default function SecaoExperienciaTrabalho (props) {
+export default function SecaoExperienciaTrabalho(props) {
     return (
-        <section className={estilos.secao_experiencia}>
+        <section className={props.ehTemaEscuro
+            ? estilos.secao_modo_escuro
+            : estilos.secao_modo_claro
+        }
+        >
             <div className={estilos.container_textual}>
                 <h2 className={estilos.titulo}>Experiências De Trabalho</h2>
                 <p>
@@ -13,25 +17,28 @@ export default function SecaoExperienciaTrabalho (props) {
             </div>
 
             <div className={estilos.container_card}>
-                <Card 
+                <Card
+                    ehTemaEscuro={props.ehTemaEscuro}
                     data="JUNHO 2012 - 2016"
                     titulo="Web Designer."
                     empresa="Pied Piper StartUp"
                     paragrafo="Criação de Landing pages, sites institucionais e E-commerces completamente personalizados e otimizados para buscadores"
                 />
                 <Card
+                    ehTemaEscuro={props.ehTemaEscuro}
                     data="AGOSTO 2016 - 2019"
                     titulo="Product Designer"
                     empresa="E Corp."
                     paragrafo="Criação de Landing pages, sites institucionais e E-commerces completamente personalizados e otimizados para buscadores"
-                
+
                 />
                 <Card
+                    ehTemaEscuro={props.ehTemaEscuro}
                     data="Fevereiro 2019 - 2021"
                     titulo="Digital consulting"
                     empresa="Arasaka inc."
                     paragrafo="Criação de Landing pages, sites institucionais e E-commerces completamente personalizados e otimizados para buscadores"
-                
+
                 />
             </div>
         </section>

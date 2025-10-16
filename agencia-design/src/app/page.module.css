@@ -1,0 +1,10 @@
+.credito {
+    text-align: center;
+    color: var(--cor-paragrafo);
+    padding: 20px;
+    
+}
+.credito span {
+    color: var(--laranja);
+    font-weight: 600;
+}

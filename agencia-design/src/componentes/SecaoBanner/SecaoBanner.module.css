@@ -4,10 +4,10 @@
     display: flex;
     
 }
-.container_banner, .container_textual{
+.imagemDeFundo_modo_escuro, .imagemDeFundo_modo_claro, .container_textual{
     width: 50%;
 }
-.container_banner  {
+.imagemDeFundo_modo_escuro, .imagemDeFundo_modo_claro {
     background-image: url("/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,4 +36,3 @@
     color: var(--cor-titulo);
     font-weight: 600;
 }
-

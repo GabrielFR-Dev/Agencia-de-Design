@@ -1,0 +1,42 @@
+.rodape_modo_escuro, .rodape_modo_claro {
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.container_rodape {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.container_rodape p {
+    font-size: 16px;
+    color: var(--cor-paragrafo);
+}
+.container_imagens {
+    max-width: 375px;
+    display: flex;
+    gap: 10px;
+
+    
+
+}
+.container_imagens img {
+    width: 45px;
+    height: 45px;
+}
+.container_imagens img:hover {
+    transform: scale(1.1) translateY(-5px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.creditos {
+    margin-top: 60px;
+    
+}

@@ -1,3 +1,6 @@
+'use client'
+import { useState } from "react";
+
 import Image from "next/image";
 import estilos from "./page.module.css";
 import Topo from "@/componentes/Topo";
@@ -7,27 +10,34 @@ import Rodape from "@/componentes/Rodape";
 
 
 export default function Home() {
+
+  const [ehTemaEscuro, setTemaEscuro] = useState(false)
+  function alterarTema() {
+    setTemaEscuro(!ehTemaEscuro)
+  }
+
+
   return (
-   <>
-    <header>
-      <Topo/>
-    </header>
-    
-    <section>
-      <SecaoBanner/>
-    </section>
+    <>
+      <header>
+        <Topo acao_onclick={alterarTema} ehTemaEscuro={ehTemaEscuro} />
+      </header>
 
-    <main>
-      <SecaoExperienciaTrabalho/>
-      
-    </main>
+  
+      <main>
+        <SecaoBanner ehTemaEscuro={ehTemaEscuro} />
+        <SecaoExperienciaTrabalho ehTemaEscuro={ehTemaEscuro}/>
 
-    <footer>
-      <Rodape/>
-    </footer>
+      </main>
+
+      <footer>
+        <Rodape ehTemaEscuro={ehTemaEscuro}/>
+        <p className={estilos.credito}>copyright 2025 @ <span>gabriel ferreira</span>
+        </p>
+      </footer>
 
 
 
-   </>
+    </>
   )
 };
