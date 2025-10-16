@@ -11,9 +11,8 @@ export default function Card (props) {
                 <h3>{props.titulo}</h3>
 
                 <small>{props.empresa}</small>
-
-                <p>{props.paragrafo}</p>
             </div>
+            <p>{props.paragrafo}</p>
         
         </div>
     )

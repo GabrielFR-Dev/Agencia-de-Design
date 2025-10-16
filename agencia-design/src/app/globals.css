@@ -21,6 +21,12 @@
     --cor-fundo-container-rodape: #ffffff;
     --cor-fundo-rodape: #cccccc;
 
+
+    /*A cor #feb633 vai ser aplicada no titulo com o uso de css::before,
+    vai ser usada como css:hover no card e utilizada dentro do span no rodape
+    */
+    --laranja: #feb633;
+
     /*COR TEMA ESCURO*/
 
     --dark-fundo-card: #393838;
